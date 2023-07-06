@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta charset="UTF-8"/>
+        <title>Cadastro de Cliente</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <main class="mainlogobraca">
+                <div class="divlogo">
+                    <button id="toggleButton" class="buttonBarraDeTarefas"> 
+                        <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle">
+                            <div class="bars" id="bar1"></div>
+                            <div class="bars" id="bar2"></div>
+                            <div class="bars" id="bar3"></div>
+                            </label>
+                        </button>
+                </div>
+            </main>
+                <main class="mainbutton">
+                
+                <div class="divbuttonlogin">
+                     <img src="./Imagens/icone.png" class="IconeLogin">
+                </div>
+                </main>
+        </header>
+        <main class="corpo">
+            <div class="corpo2" id="corpo2">
+                <div id="taskbar"  class="animation-element">
+                     <ul>
+                        <div class="DivlogoBT">
+                            <img src="./Imagens/logosf.png" class="logoBt">
+                        </div>
+                        <a href="../Home/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/home.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas"><b>
+                                        <font class="fontBt">HOME</font>
+                                    </b></button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Cadastro de Cliente/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/CadastroDeClientes.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Cadastro de Cliente</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Cadastro de Produto/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/CadastroDeProduto.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Cadastro de Produto</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Controle de Pedido/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleDePedido.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Controle de Pedido</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Gestão de Estoque/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/GestaoDeEstoque.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Gestão de Estoque</font>
+                                </button></li>
+                        </div></a>
+                        <a href="../Aba - Controle Financeiro/controleFinanceiro.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleFinanceiro.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Controle Financeiro</font>
+                                </button></li>
+                        </div></a>
+                        <a><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/Relatorios.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Relatórios</font>
+                                </button></li>
+                        </div></a>
+                     </ul>
+                 </div>
+                 </div>
+
+            <div class="CorpoPrincipal">
+
+                <div class="container">
+                    <nav class="classnav">
+                    <div class="divh2">
+                        <h2>Cadastro</h2>
+                    </div>
+                    <div class="divh22">
+                        <h2>Imagem do Produto</h2>
+                    </div>
+                    </nav>
+            
+                    <nav>
+                    <div>
+                    <form> 
+            
+                        <div class="input-group">
+                            <label class="label">Nome do Produto:</label>
+                            <input autocomplete="off" name="nomeproduto" id="nomeproduto" class="in" type="text">
+                            <div></div></div>
+                            
+                            <br>
+            
+                        <div class="input-group">
+                            <label class="label">Marca do Produto:</label>
+                            <input autocomplete="off" name="marcaproduto" id="marcaproduto" class="in" type="text">
+                            <div></div></div>
+            
+                            <br>
+            
+                        <div class="input-group">
+                            <label class="label">Código do Produto:</label>
+                            <input autocomplete="off" name="codigoPesquisa" id="codigoPesquisa" class="in" type="number">
+                            <div></div></div>
+            
+                            <br> 
+            
+                        <div class="input-group">
+                                <label class="label">Valor do produto:</label>
+                                <input autocomplete="off" name="valorproduto" id="valorproduto" class="in" type="number">
+                                <div></div></div>
+            
+                            <br>
+            
+                        <div class="input-group">
+                            <label class="label">Valor comercial:</label>
+                            <input autocomplete="off" name="valorcomercial" id="valorcomercial" class="in" type="number">
+                            <div></div></div>
+            
+                    </div>
+                    <div class="selImagem">
+                    <label class="picture" for="picture__input" tabIndex="0">
+                        <span class="picture__image"></span>
+                      </label>
+                      
+                      <input type="file" name="picture__input" id="picture__input"><br>
+                      <div class="divbotao">
+                        <button class="buttonmeu" onclick="cadastrarDados()"> Cadastrar </button>
+                        <button class="buttonmeu"> Excluir </button>
+                        <button class="buttonmeu" onclick="exibirDados()"> Procurar </button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            
+            </main>
+            
+        <script src="script.js"></script>
+    </body>
+</html>

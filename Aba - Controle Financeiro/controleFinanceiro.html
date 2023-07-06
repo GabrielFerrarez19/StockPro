@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta charset="UTF-8"/>
+        <title>Controle Financeiro</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <main class="mainlogobraca">
+                <div class="divlogo">
+                    <button id="toggleButton" class="buttonBarraDeTarefas"> 
+                        <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle">
+                            <div class="bars" id="bar1"></div>
+                            <div class="bars" id="bar2"></div>
+                            <div class="bars" id="bar3"></div>
+                            </label>
+                        </button>
+                </div>
+            </main>
+                <main class="mainbutton">
+                
+                <div class="divbuttonlogin">
+                     <img src="./Imagens/icone.png" class="IconeLogin">
+                </div>
+                </main>
+        </header>
+        <main class="corpo">
+            <div class="corpo2" id="corpo2">
+                <div id="taskbar"  class="animation-element">
+                     <ul>
+                        <div class="DivlogoBT">
+                            <img src="./Imagens/logosf.png" class="logoBt">
+                        </div>
+                        <a href="../Home/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/home.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas"><b>
+                                        <font class="fontBt">HOME</font>
+                                    </b></button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Cadastro de Cliente/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/CadastroDeClientes.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Cadastro de Cliente</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Cadastro de Produto/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/CadastroDeProduto.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Cadastro de Produto</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Controle de Pedido/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleDePedido.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Controle de Pedido</font>
+                                </button></li>
+                        </div></a>
+    
+                        <a href="../Aba - Gestão de Estoque/index.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/GestaoDeEstoque.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Gestão de Estoque</font>
+                                </button></li>
+                        </div></a>
+                        <a href="../Aba - Controle Financeiro/controleFinanceiro.html" class="alinks"><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleFinanceiro.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Controle Financeiro</font>
+                                </button></li>
+                        </div></a>
+                        <a><div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/Relatorios.png" class="homeBt"><button
+                                    class="linkBarraDeTarefas">
+                                    <font class="fontBt">Relatórios</font>
+                                </button></li>
+                        </div></a>
+                     </ul>
+                 </div>
+                 </div>
+
+            <div class="CorpoPrincipal">
+                <table class="tabela" border="1" cellspacing="0" cellpadding="25">
+                    <tr class="tr1">
+                        <td><b>RENDA</td>
+                        <td><b>ORÇAMENTO</td>
+                        <td><b>ENTRADA</td>
+                        <td><b>SAÍDA</td>
+                        <td><b>DATA</td>
+                    </tr>
+                    <tr>
+                        <td>Receita</td>
+                        <td><input  class="caixaTexto"> </td>
+                        <td><input class="caixaTexto" id="receitaentrada"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date"  class="data1"></td>
+                    </tr>
+                    <tr>
+                        <td>Despesas</td>
+                        <td><input class="caixaTexto"> </td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date"  class="data1"></td>
+                    </tr>
+                    <tr>
+                        <td>Nº de Pedidos</td>
+                        <td><input class="caixaTexto"> </td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date"  class="data1"></td>
+                    </tr>
+                    <tr>
+                        <td>Reembolso</td>
+                        <td><input class="caixaTexto"> </td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date"  class="data1"></td>
+                    </tr>
+                    <tr>
+                        <td>Renda Extra</td>
+                        <td><input class="caixaTexto"> </td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date"  class="data1"></td>
+                    </tr>
+                    <tr>
+                        <td>Outros</td>
+                        <td><input class="caixaTexto"> </td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input class="caixaTexto"></td>
+                        <td><input type="date" class="data1"></td>
+                    </tr>
+                </table>
+                
+                <div class="divbotao">
+                    <button class="buttonmeu" onclick="cadastrarDados()"> Arquivar </button>
+                    <button class="buttonmeu"> Excluir </button>
+                    <button class="buttonmeu" onclick="exibirDados()"> Imprimir </button>
+                </div>
+               
+            
+            </main>
+            
+        <script src="script.js"></script>
+    </body>
+</html>

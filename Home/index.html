@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!" />
+    <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <main class="mainlogobraca">
+            <div class="divlogo">
+                <button id="toggleButton" class="buttonBarraDeTarefas">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                </button>
+            </div>
+        </main>
+        <main class="mainbutton">
+
+            <div class="divbuttonlogin">
+                <img src="./Imagens/icone.png" class="IconeLogin">
+            </div>
+        </main>
+    </header>
+    <main class="corpo">
+        <div class="corpo2" id="corpo2">
+            <div id="taskbar" class="animation-element">
+                <ul>
+                    <div class="DivlogoBT">
+                        <img src="./Imagens/logosf.png" class="logoBt">
+                    </div>
+                    <a href="../Home/index.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/home.png" class="homeBt"><button
+                                class="linkBarraDeTarefas"><b>
+                                    <font class="fontBt">HOME</font>
+                                </b></button></li>
+                    </div></a>
+
+                    <a href="../Aba - Cadastro de Cliente/index.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/CadastroDeClientes.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Cadastro de Cliente</font>
+                            </button></li>
+                    </div></a>
+
+                    <a href="../Aba - Cadastro de Produto/index.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/CadastroDeProduto.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Cadastro de Produto</font>
+                            </button></li>
+                    </div></a>
+
+                    <a href="../Aba - Controle de Pedido/index.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/ControleDePedido.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Controle de Pedido</font>
+                            </button></li>
+                    </div></a>
+
+                    <a href="../Aba - Gestão de Estoque/index.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/GestaoDeEstoque.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Gestão de Estoque</font>
+                            </button></li>
+                    </div></a>
+                    <a href="../Aba - Controle Financeiro/controleFinanceiro.html" class="alinks"><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/ControleFinanceiro.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Controle Financeiro</font>
+                            </button></li>
+                    </div></a>
+                    <a><div class="divlinks">
+                        <li class="liBt"><img src="./Imagens/Relatorios.png" class="homeBt"><button
+                                class="linkBarraDeTarefas">
+                                <font class="fontBt">Relatórios</font>
+                            </button></li>
+                    </div></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="CorpoPrincipal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="left">
+                                <div class="calendar">
+                                    <div class="month">
+                                        <i class="fas fa-angle-left prev"></i>
+                                        <div class="date">december 2015</div>
+                                        <i class="fas fa-angle-right next"></i>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Dom</div>
+                                        <div>Seg</div>
+                                        <div>Ter</div>
+                                        <div>Qua</div>
+                                        <div>Qui</div>
+                                        <div>Sex</div>
+                                        <div>Sab</div>
+                                    </div>
+                                    <div class="days"></div>
+                                    <div class="goto-today">
+                                        <div class="goto">
+                                            <input type="text" placeholder="mm/yyyy" class="date-input" />
+                                            <button class="goto-btn">Vá</button>
+                                        </div>
+                                        <button class="today-btn">Hoje</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="today-date">
+                                    <div class="event-day">Tarefas</div>
+                                    <div class="event-date">12th december 2022</div>
+                                </div>
+                                <div class="events"></div>
+                                <div class="add-event-wrapper">
+                                    <div class="add-event-header">
+                                        <div class="title">Add Evento</div>
+                                        <i class="fas fa-times close"></i>
+                                    </div>
+                                    <div class="add-event-body">
+                                        <div class="add-event-input">
+                                            <input type="text" placeholder="Event Name" class="event-name" />
+                                        </div>
+                                        <div class="add-event-input">
+                                            <input type="text" placeholder="Event Time From" class="event-time-from" />
+                                        </div>
+                                        <div class="add-event-input">
+                                            <input type="text" placeholder="Event Time To" class="event-time-to" />
+                                        </div>
+                                    </div>
+                                    <div class="add-event-footer">
+                                        <button class="add-event-btn">Add Evento</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add-event">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="grafico">
+
+                            <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+                            <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+                            <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+                            <div id="chartdiv"></div>
+                        </div>
+                        <div class="select">
+                        <div class="select-wrapper">
+                            <div class="selectWrapper">
+                                <select id="selectWrapper" onchange="atualizaSelect()">
+                                    <option value="clientes">Vendas</option>
+                                    <option value="vendas">Clientes</option>
+                                    <option value="lucro">Lucro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="select-wrapper">
+                            <div class="selectWrapper">
+                                <select id="selectWrapper" onchange="atualizaSelect()" class="selectWrapper">
+                                    <option value="clientes">2020</option>
+                                    <option value="vendas">2021</option>
+                                    <option value="lucro">2022</option>
+                                    <option value="lucro">2023</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a class="carousel-prev" href="#"><</a>
+                        <a class="carousel-next" href="#">></a>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="scriptCaroceu.js">
+
+    </script>
+</body>
+
+</html>
